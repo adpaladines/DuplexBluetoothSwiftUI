@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD24EA282ACDD82E001113C0 /* DuplexBluetoothSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA272ACDD82E001113C0 /* DuplexBluetoothSwiftUIApp.swift */; };
+		DD24EA2A2ACDD82E001113C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA292ACDD82E001113C0 /* ContentView.swift */; };
+		DD24EA2C2ACDD830001113C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD24EA2B2ACDD830001113C0 /* Assets.xcassets */; };
+		DD24EA2F2ACDD830001113C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD24EA2E2ACDD830001113C0 /* Preview Assets.xcassets */; };
+		DD24EA392ACDD831001113C0 /* DuplexBluetoothSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA382ACDD831001113C0 /* DuplexBluetoothSwiftUITests.swift */; };
+		DD24EA432ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA422ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.swift */; };
+		DD24EA452ACDD831001113C0 /* DuplexBluetoothSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA442ACDD831001113C0 /* DuplexBluetoothSwiftUIUITestsLaunchTests.swift */; };
+		DD24EA572ACDD884001113C0 /* CentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA562ACDD884001113C0 /* CentralManager.swift */; };
+		DD24EA592ACDD8F5001113C0 /* PeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA582ACDD8F5001113C0 /* PeripheralManager.swift */; };
+		DD24EA5B2ACDD933001113C0 /* BluetoothCentralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA5A2ACDD933001113C0 /* BluetoothCentralViewModel.swift */; };
+		DD24EA5D2ACDD9C5001113C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA5C2ACDD9C5001113C0 /* SceneDelegate.swift */; };
+		DD24EA5F2ACDDB2F001113C0 /* BluetoothPeripheralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA5E2ACDDB2F001113C0 /* BluetoothPeripheralView.swift */; };
+		DD24EA612ACDDB53001113C0 /* BluetoothPeripheralViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA602ACDDB53001113C0 /* BluetoothPeripheralViewModel.swift */; };
+		DD24EA632ACE35B4001113C0 /* BluetoothService.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD24EA622ACE35B4001113C0 /* BluetoothService.plist */; };
+		DD24EA652ACF13F9001113C0 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA642ACF13F9001113C0 /* CBUUIDs.swift */; };
+		DD24EA672AD057C3001113C0 /* BluetoothCentralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24EA662AD057C3001113C0 /* BluetoothCentralView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD24EA352ACDD831001113C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD24EA1C2ACDD82E001113C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD24EA232ACDD82E001113C0;
+			remoteInfo = DuplexBluetoothSwiftUI;
+		};
+		DD24EA3F2ACDD831001113C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD24EA1C2ACDD82E001113C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD24EA232ACDD82E001113C0;
+			remoteInfo = DuplexBluetoothSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD24EA242ACDD82E001113C0 /* DuplexBluetoothSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DuplexBluetoothSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD24EA272ACDD82E001113C0 /* DuplexBluetoothSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexBluetoothSwiftUIApp.swift; sourceTree = "<group>"; };
+		DD24EA292ACDD82E001113C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD24EA2B2ACDD830001113C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD24EA2E2ACDD830001113C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD24EA342ACDD831001113C0 /* DuplexBluetoothSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuplexBluetoothSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD24EA382ACDD831001113C0 /* DuplexBluetoothSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexBluetoothSwiftUITests.swift; sourceTree = "<group>"; };
+		DD24EA3E2ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuplexBluetoothSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD24EA422ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexBluetoothSwiftUIUITests.swift; sourceTree = "<group>"; };
+		DD24EA442ACDD831001113C0 /* DuplexBluetoothSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplexBluetoothSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD24EA562ACDD884001113C0 /* CentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralManager.swift; sourceTree = "<group>"; };
+		DD24EA582ACDD8F5001113C0 /* PeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralManager.swift; sourceTree = "<group>"; };
+		DD24EA5A2ACDD933001113C0 /* BluetoothCentralViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCentralViewModel.swift; sourceTree = "<group>"; };
+		DD24EA5C2ACDD9C5001113C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DD24EA5E2ACDDB2F001113C0 /* BluetoothPeripheralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheralView.swift; sourceTree = "<group>"; };
+		DD24EA602ACDDB53001113C0 /* BluetoothPeripheralViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheralViewModel.swift; sourceTree = "<group>"; };
+		DD24EA622ACE35B4001113C0 /* BluetoothService.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BluetoothService.plist; sourceTree = "<group>"; };
+		DD24EA642ACF13F9001113C0 /* CBUUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
+		DD24EA662AD057C3001113C0 /* BluetoothCentralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCentralView.swift; sourceTree = "<group>"; };
+		DD24EA682AD09872001113C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD24EA212ACDD82E001113C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24EA312ACDD831001113C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24EA3B2ACDD831001113C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD24EA1B2ACDD82E001113C0 = {
+			isa = PBXGroup;
+			children = (
+				DD24EA262ACDD82E001113C0 /* DuplexBluetoothSwiftUI */,
+				DD24EA372ACDD831001113C0 /* DuplexBluetoothSwiftUITests */,
+				DD24EA412ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests */,
+				DD24EA252ACDD82E001113C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD24EA252ACDD82E001113C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA242ACDD82E001113C0 /* DuplexBluetoothSwiftUI.app */,
+				DD24EA342ACDD831001113C0 /* DuplexBluetoothSwiftUITests.xctest */,
+				DD24EA3E2ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD24EA262ACDD82E001113C0 /* DuplexBluetoothSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA682AD09872001113C0 /* Info.plist */,
+				DD24EA552ACDD860001113C0 /* Resources */,
+				DD24EA542ACDD84C001113C0 /* Model */,
+				DD24EA532ACDD845001113C0 /* View */,
+				DD24EA512ACDD839001113C0 /* ViewModel */,
+				DD24EA522ACDD83F001113C0 /* Managers */,
+				DD24EA272ACDD82E001113C0 /* DuplexBluetoothSwiftUIApp.swift */,
+				DD24EA2D2ACDD830001113C0 /* Preview Content */,
+			);
+			path = DuplexBluetoothSwiftUI;
+			sourceTree = "<group>";
+		};
+		DD24EA2D2ACDD830001113C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA2E2ACDD830001113C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DD24EA372ACDD831001113C0 /* DuplexBluetoothSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA382ACDD831001113C0 /* DuplexBluetoothSwiftUITests.swift */,
+			);
+			path = DuplexBluetoothSwiftUITests;
+			sourceTree = "<group>";
+		};
+		DD24EA412ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA422ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.swift */,
+				DD24EA442ACDD831001113C0 /* DuplexBluetoothSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = DuplexBluetoothSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		DD24EA512ACDD839001113C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA5A2ACDD933001113C0 /* BluetoothCentralViewModel.swift */,
+				DD24EA602ACDDB53001113C0 /* BluetoothPeripheralViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DD24EA522ACDD83F001113C0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA562ACDD884001113C0 /* CentralManager.swift */,
+				DD24EA582ACDD8F5001113C0 /* PeripheralManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DD24EA532ACDD845001113C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA292ACDD82E001113C0 /* ContentView.swift */,
+				DD24EA5E2ACDDB2F001113C0 /* BluetoothPeripheralView.swift */,
+				DD24EA662AD057C3001113C0 /* BluetoothCentralView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD24EA542ACDD84C001113C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DD24EA552ACDD860001113C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD24EA2B2ACDD830001113C0 /* Assets.xcassets */,
+				DD24EA5C2ACDD9C5001113C0 /* SceneDelegate.swift */,
+				DD24EA622ACE35B4001113C0 /* BluetoothService.plist */,
+				DD24EA642ACF13F9001113C0 /* CBUUIDs.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD24EA232ACDD82E001113C0 /* DuplexBluetoothSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD24EA482ACDD831001113C0 /* Build configuration list for PBXNativeTarget "DuplexBluetoothSwiftUI" */;
+			buildPhases = (
+				DD24EA202ACDD82E001113C0 /* Sources */,
+				DD24EA212ACDD82E001113C0 /* Frameworks */,
+				DD24EA222ACDD82E001113C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DuplexBluetoothSwiftUI;
+			productName = DuplexBluetoothSwiftUI;
+			productReference = DD24EA242ACDD82E001113C0 /* DuplexBluetoothSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD24EA332ACDD831001113C0 /* DuplexBluetoothSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD24EA4B2ACDD831001113C0 /* Build configuration list for PBXNativeTarget "DuplexBluetoothSwiftUITests" */;
+			buildPhases = (
+				DD24EA302ACDD831001113C0 /* Sources */,
+				DD24EA312ACDD831001113C0 /* Frameworks */,
+				DD24EA322ACDD831001113C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD24EA362ACDD831001113C0 /* PBXTargetDependency */,
+			);
+			name = DuplexBluetoothSwiftUITests;
+			productName = DuplexBluetoothSwiftUITests;
+			productReference = DD24EA342ACDD831001113C0 /* DuplexBluetoothSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD24EA3D2ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD24EA4E2ACDD831001113C0 /* Build configuration list for PBXNativeTarget "DuplexBluetoothSwiftUIUITests" */;
+			buildPhases = (
+				DD24EA3A2ACDD831001113C0 /* Sources */,
+				DD24EA3B2ACDD831001113C0 /* Frameworks */,
+				DD24EA3C2ACDD831001113C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD24EA402ACDD831001113C0 /* PBXTargetDependency */,
+			);
+			name = DuplexBluetoothSwiftUIUITests;
+			productName = DuplexBluetoothSwiftUIUITests;
+			productReference = DD24EA3E2ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD24EA1C2ACDD82E001113C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DD24EA232ACDD82E001113C0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DD24EA332ACDD831001113C0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DD24EA232ACDD82E001113C0;
+					};
+					DD24EA3D2ACDD831001113C0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DD24EA232ACDD82E001113C0;
+					};
+				};
+			};
+			buildConfigurationList = DD24EA1F2ACDD82E001113C0 /* Build configuration list for PBXProject "DuplexBluetoothSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD24EA1B2ACDD82E001113C0;
+			productRefGroup = DD24EA252ACDD82E001113C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD24EA232ACDD82E001113C0 /* DuplexBluetoothSwiftUI */,
+				DD24EA332ACDD831001113C0 /* DuplexBluetoothSwiftUITests */,
+				DD24EA3D2ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD24EA222ACDD82E001113C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD24EA632ACE35B4001113C0 /* BluetoothService.plist in Resources */,
+				DD24EA2F2ACDD830001113C0 /* Preview Assets.xcassets in Resources */,
+				DD24EA2C2ACDD830001113C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24EA322ACDD831001113C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24EA3C2ACDD831001113C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD24EA202ACDD82E001113C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD24EA2A2ACDD82E001113C0 /* ContentView.swift in Sources */,
+				DD24EA672AD057C3001113C0 /* BluetoothCentralView.swift in Sources */,
+				DD24EA592ACDD8F5001113C0 /* PeripheralManager.swift in Sources */,
+				DD24EA652ACF13F9001113C0 /* CBUUIDs.swift in Sources */,
+				DD24EA282ACDD82E001113C0 /* DuplexBluetoothSwiftUIApp.swift in Sources */,
+				DD24EA5B2ACDD933001113C0 /* BluetoothCentralViewModel.swift in Sources */,
+				DD24EA572ACDD884001113C0 /* CentralManager.swift in Sources */,
+				DD24EA5D2ACDD9C5001113C0 /* SceneDelegate.swift in Sources */,
+				DD24EA5F2ACDDB2F001113C0 /* BluetoothPeripheralView.swift in Sources */,
+				DD24EA612ACDDB53001113C0 /* BluetoothPeripheralViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24EA302ACDD831001113C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD24EA392ACDD831001113C0 /* DuplexBluetoothSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD24EA3A2ACDD831001113C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD24EA432ACDD831001113C0 /* DuplexBluetoothSwiftUIUITests.swift in Sources */,
+				DD24EA452ACDD831001113C0 /* DuplexBluetoothSwiftUIUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD24EA362ACDD831001113C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD24EA232ACDD82E001113C0 /* DuplexBluetoothSwiftUI */;
+			targetProxy = DD24EA352ACDD831001113C0 /* PBXContainerItemProxy */;
+		};
+		DD24EA402ACDD831001113C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD24EA232ACDD82E001113C0 /* DuplexBluetoothSwiftUI */;
+			targetProxy = DD24EA3F2ACDD831001113C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DD24EA462ACDD831001113C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DD24EA472ACDD831001113C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD24EA492ACDD831001113C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuplexBluetoothSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuplexBluetoothSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Will use your bluetooh for transfer data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.paladines.bluetooth.duplex.swiftui.DuplexBluetoothSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD24EA4A2ACDD831001113C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DuplexBluetoothSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DuplexBluetoothSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Will use your bluetooh for transfer data.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.paladines.bluetooth.duplex.swiftui.DuplexBluetoothSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DD24EA4C2ACDD831001113C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.paladines.bluetooth.duplex.swiftui.DuplexBluetoothSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuplexBluetoothSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuplexBluetoothSwiftUI";
+			};
+			name = Debug;
+		};
+		DD24EA4D2ACDD831001113C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.paladines.bluetooth.duplex.swiftui.DuplexBluetoothSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DuplexBluetoothSwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DuplexBluetoothSwiftUI";
+			};
+			name = Release;
+		};
+		DD24EA4F2ACDD831001113C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.paladines.bluetooth.duplex.swiftui.DuplexBluetoothSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuplexBluetoothSwiftUI;
+			};
+			name = Debug;
+		};
+		DD24EA502ACDD831001113C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3PLD5VHEP6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andres.paladines.bluetooth.duplex.swiftui.DuplexBluetoothSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DuplexBluetoothSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD24EA1F2ACDD82E001113C0 /* Build configuration list for PBXProject "DuplexBluetoothSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD24EA462ACDD831001113C0 /* Debug */,
+				DD24EA472ACDD831001113C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD24EA482ACDD831001113C0 /* Build configuration list for PBXNativeTarget "DuplexBluetoothSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD24EA492ACDD831001113C0 /* Debug */,
+				DD24EA4A2ACDD831001113C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD24EA4B2ACDD831001113C0 /* Build configuration list for PBXNativeTarget "DuplexBluetoothSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD24EA4C2ACDD831001113C0 /* Debug */,
+				DD24EA4D2ACDD831001113C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD24EA4E2ACDD831001113C0 /* Build configuration list for PBXNativeTarget "DuplexBluetoothSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD24EA4F2ACDD831001113C0 /* Debug */,
+				DD24EA502ACDD831001113C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD24EA1C2ACDD82E001113C0 /* Project object */;
+}
