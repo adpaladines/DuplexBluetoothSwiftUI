@@ -1,4 +1,5 @@
 # DuplexBluetoothSwiftUI
+### This is an ongoing proof of concept project just to remember the basics of bluetooth communication from and to `Centrals` and `Peripherals`
 This is an approach to create Bluetooth connexions between iOS/iPadOS devices
 
 First of all, we have to know that peripheral is the object iOS will recognize a bluetooth enabled device.
